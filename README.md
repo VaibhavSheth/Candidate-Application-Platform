@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+Candidate Application Platform
+This project aims to create a candidate application platform where users can browse job listings, apply filters to refine their search, and experience infinite scroll for a seamless browsing experience. The platform prioritizes user-friendliness and intuitive design for easy navigation and application to jobs.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Requirements
+Job Cards: Display each job listing as a card with the following details:
+Job title
+Company name
+Location
+Job description (limited with option to expand)
+Experience required
+Apply button/link
+Filters: Implement filters for refining job listings based on:
+Minimum experience
+Company name
+Location
+Remote/on-site availability
+Tech stack
+Role
+Minimum base pay
+Infinite Scroll: Enable infinite scroll functionality to load additional job listings as users scroll down the page. No "Load More" button should be required.
+Responsive Design: Ensure the platform is responsive across different screen sizes, including mobile devices (optional but recommended).
 
-## Available Scripts
+Technology Stack
+ReactJs: Frontend library for building user interfaces.
+Redux: State management library for managing application state.
+CSS: Styling language for designing the user interface.
+Material UI: UI component library for React applications.
 
-In the project directory, you can run:
+Project Structure
+src/components/: Contains reusable UI components like JobCard and Filter.
+src/containers/: Holds container components like JobListContainer responsible for managing state and data fetching.
+src/services/: Includes apiService.js for making HTTP requests to fetch job listings.
+src/redux/: Houses Redux actions and reducers for managing job listings state.
+public/: Holds index.html and other public assets.
+README.md: Documentation for the project.
 
-### `npm start`
+Setup
+Clone the repository.
+Navigate to the project directory.
+Run npm install to install dependencies.
+Start the development server with npm start.
+Access the application in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Notes
+For the scope of this assignment, focus on implementing the search jobs section only, excluding post-apply logic/UI.
+Ensure that API endpoints match the requirements for fetching job listings.
+Test the application thoroughly to ensure proper functionality and responsiveness.
+Contributors
+Vaibhav Sheth
+Feel free to reach out for any clarifications or assistance. Happy coding!
